@@ -1,6 +1,7 @@
 const inquirer = require ('inquirer')
 const {writeFile} = require ('fs/promises');
 const {Shape ,Circle, Square, Triangle } = require('./lib/shapes');
+const generateLogo = require('./lib/generateLogo')
 
 const prompt = inquirer.createPromptModule() 
 
@@ -44,10 +45,11 @@ prompt([
         shapeChoice = new Circle(answers.shapeColor)
     } else if (answers.shape === "square") {
         shapeChoice = new Square(answers.shapeColor)
-    } else if (answers) {
-        
+    } else if (answers.shape === "triangle") {
+        shapeChoice = new Triangle(answers.shapeColor)
     }
-    return writeFile('./examples/logo.svg')
+    const svg = generateLogo(answers.text, answers.textColor, shapeChoice)
+    return writeFile('./examples/logo.svg', svg)
 })
 .then(()=> console.log('Generated logo.svg'))
 
