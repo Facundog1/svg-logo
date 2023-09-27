@@ -1,5 +1,5 @@
 <svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
-  <circle cx="150" cy="100" r="100" fill="blue" />
+  <polygon points="150, 0 300, 200 0, 200" fill="orange" />
   <font><font-face font-family="Super Sans" /></font>
-  <text x="150" y="120" font-size="60" text-anchor="middle" font-family="Super Sans" fill="red">ASD</text>
+  <text x="150" y="150" font-size="60" text-anchor="middle" font-family="Super Sans" fill="green">RAD</text>
   </svg>
