@@ -17,3 +17,4 @@ WHEN I open the `logo.svg` file in a browser
 THEN I am shown a 300x200 pixel image that matches the criteria I entered
 
 ## Repository
+![Video Example](https://www.awesomescreenshot.com/video/21106216?key=bc03e3b71e49f9bec5475186b0d377e8) 
